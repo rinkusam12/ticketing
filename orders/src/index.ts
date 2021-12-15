@@ -7,7 +7,7 @@ import { TicketUpdatedListener } from "./events/listeners/ticket-updated-listene
 import { natsWrapper } from "./nats-wrapper";
 
 const start = async () => {
-  console.log("Starting...");
+  console.log("Starting....");
   
   if (!process.env.JWT_KEY) {
     throw Error("JWT_KEYU not defined");
