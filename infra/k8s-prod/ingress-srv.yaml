@@ -8,7 +8,7 @@ metadata:
     service.beta.kubernetes.io/do-loadbalancer-hostname: 'ankitsamanta.xyz'
 spec:
   rules:
-    - host: www.ankitsamanta.xyz
+    - host: ankitsamanta.xyz
       http:
         paths:
           - path: /api/users/?(.*)
