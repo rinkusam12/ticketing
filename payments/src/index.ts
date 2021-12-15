@@ -5,6 +5,8 @@ import { OrderCreatedListener } from "./events/listeners/order-created-listener"
 import { natsWrapper } from "./nats-wrapper";
 
 const start = async () => {
+  console.log("Starting up ....");
+  
   if (!process.env.JWT_KEY) {
     throw Error("JWT_KEYU not defined");
   }

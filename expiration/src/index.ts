@@ -3,6 +3,7 @@ import { OrderCreatedListener } from "./events/listeners/order-created-listener"
 import { natsWrapper } from "./nats-wrapper";
 
 const start = async () => {
+  console.log("Starting up zzz....");
   
   if (!process.env.NATS_CLIENT_ID) {
     throw Error("NATS_CLIENT_ID is not defined");
