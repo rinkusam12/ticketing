@@ -17,7 +17,7 @@ jobs:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
       - run: cd orders && docker build -t rinkusamanta12/orders-new .
-      - run: docker push rinkusamanta12/orders
+      - run: docker push rinkusamanta12/orders-new
       - uses: digitalocean/action-doctl@v2
         with:
           token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
