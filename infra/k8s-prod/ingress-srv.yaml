@@ -5,9 +5,10 @@ metadata:
   annotations:
     kubernetes.io/ingress.class: nginx
     nginx.ingress.kubernetes.io/use-regex: "true"
+    service.beta.kubernetes.io/do-loadbalancer-hostname: 'ankitsamanta.xyz'
 spec:
   rules:
-    - host: posts.com
+    - host: www.ankitsamanta.xyz
       http:
         paths:
           - path: /api/users/?(.*)
