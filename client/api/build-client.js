@@ -12,7 +12,7 @@ export default ({ req }) => {
   } else {
     // We must be on the browser
     return axios.create({
-      baseUrl: 'http://ankitsamanta.xyz/',
+      baseUrl: 'http://www.ankitsamanta.xyz/',
     });
   }
 };
