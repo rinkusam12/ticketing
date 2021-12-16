@@ -43,10 +43,11 @@
 
 import React from 'react'
 
-export const Index = () => {
+const Index = () => {
   return (
     <div>
       <h1>Hello World</h1>
     </div>
   )
 }
+export default Index
