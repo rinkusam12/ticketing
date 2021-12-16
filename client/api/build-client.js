@@ -6,13 +6,13 @@ export default ({ req }) => {
 
     return axios.create({
       baseURL:
-        'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+        'http://www.ankitsamanta.xyz/',
       headers: req.headers,
     });
   } else {
     // We must be on the browser
     return axios.create({
-      baseUrl: 'http://www.ankitsamanta.xyz/',
+      baseUrl: '/',
     });
   }
 };
